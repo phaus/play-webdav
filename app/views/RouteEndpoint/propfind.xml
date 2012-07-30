@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<a:multistatus xmlns:b="urn:uuid:${uuid}/" xmlns:c="xml:" xmlns:a="DAV:">
+    <a:response>
+        <a:href>@@{RouteEndpoint.index()}</a:href>
+        <a:propstat>
+            <a:status>HTTP/1.1 200 OK</a:status>
+            <a:prop>
+                <a:displayname>index</a:displayname>
+                <a:resourcetype>
+                    <a:collection/>
+                </a:resourcetype>
+                <a:version-name/>
+                <a:resourcetype/>
+                <a:lockdiscovery/>
+            </a:prop>
+        </a:propstat>
+    </a:response>
+    <a:response>
+        <a:href>@@{RouteEndpoint.show(1)}</a:href>
+        <a:propstat>
+            <a:status>HTTP/1.1 200 OK</a:status>
+            <a:prop>
+                <a:getcontentlength>2</a:getcontentlength>
+                <a:getcontenttype>text/plain</a:getcontenttype>
+                <a:displayname>show</a:displayname>
+                <a:version-name/>
+                <a:resourcetype/>
+                <a:lockdiscovery/>
+            </a:prop>
+        </a:propstat>
+    </a:response>
+</a:multistatus>

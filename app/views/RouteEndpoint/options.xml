@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<multistatus xmlns="DAV:">
+    <response>
+        <href>@@{RouteEndpoint.index()}</href>
+        <propstat>
+            <prop>
+                <supported-live-property-set>
+                    <supported-live-property>
+                        <prop>
+                            <ordering-type/>
+                        </prop>
+                    </supported-live-property>
+          <!-- ... other live properties omitted for brevity ... -->
+                </supported-live-property-set>
+                <supported-method-set>
+                    <supported-method name="COPY" />
+                    <supported-method name="DELETE" />
+                    <supported-method name="GET" />
+                    <supported-method name="HEAD" />
+                    <supported-method name="LOCK" />
+                    <supported-method name="MKCOL" />
+                    <supported-method name="MOVE" />
+                    <supported-method name="OPTIONS" />
+                    <supported-method name="ORDERPATCH" />
+                    <supported-method name="POST" />
+                    <supported-method name="PROPFIND" />
+                    <supported-method name="PROPPATCH" />
+                    <supported-method name="PUT" />
+                    <supported-method name="TRACE" />
+                    <supported-method name="UNLOCK" />
+                </supported-method-set>
+            </prop>
+            <status>HTTP/1.1 200 OK</status>
+        </propstat>
+    </response>
+</multistatus>
